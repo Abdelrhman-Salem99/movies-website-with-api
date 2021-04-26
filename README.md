@@ -9,6 +9,7 @@ Technology I used
 - jquery
 - API
 - Regex
+- Fontawesome
 
 
 --- 
