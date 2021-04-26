@@ -1,0 +1,157 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+     <!----------------- Loading Screen ---------------------------->
+     <div class="loading-screen align-items-center justify-content-center">
+        <div class="trinity-rings-spinner">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+     <!----------------- Menu Section ---------------------------->
+    <section id="menu">
+        <div class="allDivMenu position-fixed d-flex">
+            <div class=" open-menu pl-2">
+                <div class="container open-menu-flex pb-4">
+                    <div class="movie-items">
+                        <ul class="mt-4 list-unstyled ">
+                            <li id="item1" class="mb-4">
+                                <a class="nav-cat" value="now_playing" >Now playing</a>
+                            </li>
+                            <li id="item2" class="mb-4">
+                                <a class="nav-cat" value="popular" >Popular</a>
+                            </li>
+                            <li id="item3" class="mb-4">
+                                <a class="nav-cat" value="top_rated"  >Top Rated</a>
+                            </li>
+                            <li id="item4" class="mb-4">
+                                <a class="nav-cat" value="trending" >Trending</a>
+                            </li>
+                            <li id="item5" class="mb-4">
+                                <a class="nav-cat" value="upcoming" >Upcoming</a>
+                            </li>
+                            <li id="item6" class="mb-4">
+                                <a class="nav-cat" href="#contacUs" >Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                   <div class="social-items">
+                       <a  > <i class="fab fa-facebook-f social-icons mr-3 ml-3"></i></a>
+                       <a  > <i class="fab fa-twitter social-icons mr-3"></i></a>
+                       <a  > <i class="fas fa-globe social-icons"></i></a>
+                       <div id="copyright">
+                           <p>Copyright Â© 2019 All Rights Reserved.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="out-menu text-center d-flex bg-white">
+                <img src="image/logo.png" alt="">
+                <i class="timesIcon"> <a class="fa fa-times fa-2x clicked"></a></i>
+               <i class="justifyIcon"> <a class="fa fa-align-justify fa-2x clicked"></a></i>
+               
+                <div>
+                    <i> <a    class="fas fa-globe mb-3"></a></i>
+                    <br>
+                    <i><a   class="fas fa-share-alt"></a></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!----------------- Movies Search Section ---------------------------->
+    <section id="inputsSec">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="inputs">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <input class="form-control" type="text-center" id="getMovie" placeholder="git Movies by word">
+                    </div>
+                    <div class="col-md-6 ">
+                        <input class="form-control" type="text-center" id="search" placeholder="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!----------------- Movies Section ---------------------------->
+    <section id="movieSec">
+        <div class="container">
+            <div class="row" id="moviesShow">
+              
+            </div>
+        </div>
+    </section>
+
+
+
+ <!----------------- Contac Us Section ---------------------------->
+    <section id="contacUs">
+
+        <div class="container">
+            <h2 class="mb-5">ContacUs...</h2>
+            <div class="inputs">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" id="name" placeholder="Enter Your Name" type="text-center">
+                        <div class="alert alert-danger" id="namealert" role="alert" style="display: none;">
+                            Your Name is not valid
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" id="email" placeholder="Enter Email" type="text-center">
+                        <div class="alert alert-danger" id="emailalert" role="alert" style="display: none;">
+                            entre valid email
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" id="phone" placeholder="Enter phone" type="text-center">
+                        <div class="alert alert-danger" id="phonealert" role="alert" style="display: none;">
+                            entre valid phone
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" id="age" placeholder="Enter Age" type="text-center">
+                        <div class="alert alert-danger" id="agealert" role="alert" style="display: none;">
+                            entre valid Age <samp id="spam18" style="display: none;" > : Under 18</samp>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" type="password" id="password" placeholder="Enter Password">
+                        <div class="alert alert-danger" id="passwordalert" role="alert" style="display: none;">
+                            entre valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+                        <div class="alert alert-danger" id="repasswordalert" role="alert" style="display: none;">
+                            entre valid Repassword
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" disabled ="" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
